@@ -1,4 +1,4 @@
-# ExpenseFlow — Expense Approval Workflow System
+# FlowDesk — Expense Approval Workflow System
 
 A full-stack, multi-role expense approval system with real-time notifications. Built with **React + Vite** on the frontend and **Spring Boot + MySQL** on the backend.
 
@@ -21,7 +21,7 @@ A full-stack, multi-role expense approval system with real-time notifications. B
 
 ## Overview
 
-ExpenseFlow lets employees submit expense requests that pass through a two-level approval chain — first the Manager, then the CEO. Every decision triggers an in-app notification to the submitting employee, giving full visibility at every step.
+FlowDesk lets employees submit expense requests that pass through a two-level approval chain — first the Manager, then the CEO. Every decision triggers an in-app notification to the submitting employee, giving full visibility at every step.
 
 ---
 
@@ -70,7 +70,7 @@ ExpenseFlow lets employees submit expense requests that pass through a two-level
 ## Project Structure
 
 ```
-expense-workflow/
+flowdesk/
 │
 ├── frontend/                          # Vite + React
 │   └── src/
@@ -90,7 +90,7 @@ expense-workflow/
 │           └── AuthContext.jsx        # JWT auth state
 │
 └── backend/                           # Spring Boot
-    └── src/main/java/com/expenseflow/
+    └── src/main/java/com/flowdesk/
         ├── model/
         │   ├── User.java              # USER / MANAGER / CEO roles
         │   ├── Workflow.java          # Expense workflow entity
@@ -130,8 +130,8 @@ expense-workflow/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/expense-workflow.git
-cd expense-workflow
+git clone https://github.com/your-username/flowdesk.git
+cd flowdesk
 ```
 
 ---
