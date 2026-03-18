@@ -1,3 +1,5 @@
+Demo video : (https://drive.google.com/file/d/1T1nt-pDTbwUCZ1W0X3uFq2tMORDG4Bk0/view?usp=sharing)
+
 # FlowDesk — Expense Approval Workflow System
 
 A full-stack, multi-role expense approval system with real-time notifications. Built with **React + Vite** on the frontend and **Spring Boot + MySQL** on the backend.
