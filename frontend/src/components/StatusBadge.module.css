@@ -1,0 +1,15 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+.pending        { background: var(--gray-100);   color: var(--gray-600); }
+.managerReview  { background: var(--yellow-100); color: var(--yellow-600); }
+.ceoReview      { background: #ede9fe;           color: #7c3aed; }
+.approved       { background: var(--green-100);  color: var(--green-700); }
+.rejected       { background: var(--red-100);    color: var(--red-700); }

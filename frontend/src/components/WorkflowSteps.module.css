@@ -1,0 +1,90 @@
+.stepsContainer {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.stepsTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 20px;
+  letter-spacing: -0.3px;
+}
+
+.steps { display: flex; flex-direction: column; }
+
+.stepRow { display: flex; gap: 16px; }
+.stepLeft { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+
+.stepIcon {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700;
+  flex-shrink: 0;
+  background: var(--gray-100); color: var(--gray-400); border: 2px solid var(--gray-200);
+}
+
+.stepIcon.done     { background: var(--green-600); color: white; border-color: var(--green-600); }
+.stepIcon.rejected { background: var(--red-500);   color: white; border-color: var(--red-500); }
+.stepIcon.active   { background: var(--white); color: var(--green-600); border-color: var(--green-500); }
+.stepIcon.waiting  { background: var(--gray-50); color: var(--gray-300); border-color: var(--gray-200); }
+
+.iconCheck { font-size: 14px; font-weight: 700; }
+.iconX     { font-size: 13px; font-weight: 700; }
+.stepNum   { font-size: 13px; font-weight: 600; }
+
+.pulse {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--green-500);
+  animation: pulse 1.5s ease-in-out infinite;
+  display: block;
+}
+
+.connector {
+  width: 2px; flex: 1; min-height: 16px;
+  background: var(--gray-200); margin: 4px 0;
+}
+.connectorDone { background: var(--green-400); }
+
+.stepContent {
+  flex: 1; padding: 0 0 24px 0;
+}
+
+.stepHeader {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap;
+}
+
+.roleTag {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: var(--gray-100);
+  color: var(--gray-500);
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.stepLabel { font-size: 14px; font-weight: 600; color: var(--gray-700); }
+.stepTime { margin-left: auto; font-size: 11px; color: var(--gray-400); font-family: 'DM Mono', monospace; }
+
+.stepDetail { font-size: 13px; color: var(--gray-500); }
+
+.content_done .stepLabel    { color: var(--green-700); }
+.content_done .roleTag      { background: var(--green-100); color: var(--green-700); }
+.content_rejected .stepLabel { color: var(--red-600); }
+.content_rejected .roleTag  { background: var(--red-100); color: var(--red-700); }
+.content_active .stepLabel  { color: var(--green-600); }
+.content_active .roleTag    { background: var(--green-100); color: var(--green-600); }
+
+.comment {
+  display: flex; align-items: flex-start; gap: 6px;
+  margin-top: 8px; padding: 8px 12px;
+  background: var(--gray-50); border-radius: var(--radius);
+  font-size: 12px; color: var(--gray-600); font-style: italic;
+  border-left: 3px solid var(--green-400);
+}
+.commentLabel { font-style: normal; font-weight: 600; color: var(--gray-500); flex-shrink: 0; }
